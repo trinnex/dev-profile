@@ -48,6 +48,7 @@
               direnv
               git
               nix-direnv
+              starship
             ];
           };
 
@@ -57,13 +58,12 @@
           # similar structure to packages.base, named "extras".
           # We can then install it with "nix profile install '.#extras'".
           #
-          extras = pkgs.buildEnv {
-            name = "dev-extras";
-            paths = with pkgs; [
-              ripgrep
-              starship
-            ];
-          };
+          # extras = pkgs.buildEnv {
+          #   name = "dev-extras";
+          #   paths = with pkgs; [
+          #     fzf
+          #   ];
+          # };
           
           #
           # packages.default must be set to a derivation
