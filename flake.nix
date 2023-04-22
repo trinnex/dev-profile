@@ -29,10 +29,6 @@
       # Here we can list the systems we are supporting
       #
       systems = [
-        "aarch64-darwin"
-        "aarch64-linux"
-        "i686-linux"
-        "x86_64-darwin"
         "x86_64-linux"
       ];
 
@@ -56,7 +52,7 @@
           # In order to create a set of additonal packages
           # we can add an additional output here with a
           # similar structure to packages.base, named "extras".
-          # We can then install it with "nix profile install '.#extras'".
+          # We can then install it with "nix profile install 'githun:trinnex/dev-profile#extras'".
           #
           # extras = pkgs.buildEnv {
           #   name = "dev-extras";
